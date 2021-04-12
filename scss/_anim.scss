@@ -1,0 +1,373 @@
+.category-button{
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    .category-mega-menu{
+      top: 23px;
+      visibility: visible;
+      transition: .3s;
+      pointer-events: painted;
+    }
+  }
+}
+.category-mega-menu{
+  position: absolute;
+  // top: 23px;
+  width: 900px;
+  height: 400px;
+  background: rgba(51, 51, 51, 0.87);
+  z-index: 1000;
+  top: -100vh;
+  visibility: hidden;
+  transition: .3s;
+  pointer-events: none;
+  &-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .category-mega-menu-inner-box{
+      position: relative;
+      .mega-box-hero{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          padding: 10px;
+        }
+      }
+      .mega-menu-box-title{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        h5{
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+    .mega-box-1{
+      width: 30%;
+      height: 100%;
+    }
+    .mega-box-2{
+      width: 40%;
+      height: 95%;
+      margin: auto;
+      box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      // .box-title-diff{
+      //   h5{
+      //     color: #222 !important;
+      //   }
+      // }
+    }
+  }
+}
+
+// product-page-wrapper-inner
+.product-page-wrapper{
+  margin: 50px 0;
+  .product-page-wrapper-inner{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 5px;
+    display: flex;
+    &-left{
+      width: 50%;
+      padding-left: 18px;
+      .customer-slider{
+        width: 100%;
+        height: 700px;
+        background: #333;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .product-info-box{
+        width: 100%;
+        .breadcrumb{
+          display: flex;
+          align-items: center;
+          span{
+            color: white;
+          }
+        }
+        .product-name{
+          margin: 20px 0;
+          color: white;
+          font-size: 22px;
+          h1{
+            font-family: 'Libre Baskerville', serif;
+          }
+        }
+        .product-sold{
+          display: flex;
+          align-items: center;
+          h5{
+            color: #cb9400;
+            font-size: 18px;
+          }
+          span{
+            margin: 0 5px;
+            color: white;
+          }
+        }
+        .product-price{
+          h1{
+            color: white;
+            margin: 20px 0;
+            font-weight: lighter;
+            letter-spacing: 1.5px;
+          }
+        }
+        .product-buy-box{
+          width: 100%;
+          border: 2px solid rgb(66, 66, 66);
+          border-radius: 5px;
+          padding: 15px;
+          .product-colors{
+            display: flex;
+            align-items: center;
+            .color-circle{
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              border: 2px solid rgb(255, 255, 255);
+              background: #cb9400;
+              margin-left: 10px;
+            }
+            span{
+              color: white;
+            }
+            .black{
+              background: #000 !important;
+            }
+          }
+          .product-range-box{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+          .product-range-ind{
+            display: flex;
+            align-items: center;
+            height: 62px;
+            background: #333;
+            width: fit-content;
+            border: 1px solid #cb9400;
+            .range-value{
+              height: 100%;
+              width: 90px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .range-value{
+              span{
+                font-size: 30px;
+                color: white;
+              }
+            }
+            .range-right{
+              height: 100%;
+              .range-up{
+                border-top: 0 !important;
+                height: 30px;
+                border: 1px solid #cb9400;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                border-right: 0 !important;
+                span{
+                  color: #ffffff;
+                  font-size: 18px;
+                }
+              }
+              .range-down{
+                border-bottom: 0 !important;
+              }
+            }
+          }
+          .add-to-cart{
+            width: 100%;
+            button{
+              width: 90%;
+              height: 62px;
+              background: #7a7a7a;
+              border-radius: 5px;
+              border: none;
+              color: white;
+              font-size: 20px;
+              margin-left: 40px;
+              cursor: pointer;
+            }
+          }
+        }
+        .buy-product{
+          width: 100%;
+          margin-top: 20px;
+          button{
+            width: 98%;
+            height: 62px;
+            background: #cb9400;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+        .add-to{
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          color: white;
+          svg path{
+            fill: white;
+          }
+          span{
+            margin-left: 10px;
+          }
+        }
+      }
+      .limited-time-box{
+        width: 100%;
+        height: 100px;
+        background: #7a7a7a69;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 0 20px;
+        border-radius: 5px;
+        span{
+          color: white;
+        }
+        h4{
+          color: #cb9400;
+          font-size: 20px;
+        }
+      }
+      .users-reviews{
+        width: 100%;
+        border: 2px solid #969696;
+        margin-top: 40px;
+        border-radius: 8px;
+        &-inner{
+          width: 100%;
+          height: 100%;
+          padding: 15px;
+          &-headline{
+            h3{
+              color: white;
+            }
+          }
+          .rates-box{
+            display: flex;
+            align-items: center;
+            color: white;
+            border-bottom: 1px solid #969696;
+            padding-bottom: 10px;
+            .stars{
+              font-size: 23px;
+              color: #cb9400;
+            }
+            span{
+              margin-left: 15px;
+            }
+          }
+          .user{
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+          }
+          .review{
+            color: white;
+          }
+          .user-name{
+            margin-top: 10px;
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}
+
+.login-form-fade-out{
+  position: fixed;
+  top: 100vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.753);
+  z-index: 2000;
+  transition: .2s;
+  visibility: hidden;
+  overflow: hidden;
+  .login-form-header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 0 50px;
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .login-form-fade-inner{
+    width: 100%;
+    height: 100%;
+    .login-form{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: fit-content;
+      & :nth-child(2){
+        margin-top: 30px;
+      }
+      input{
+        height: 60px;
+        padding: 0 20px;
+      }
+      button{
+        height: 60px;
+        padding: 0 20px;
+        background: #cb9400;
+        border: none;
+        font-size: 20px;
+        margin-top: 30px;
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.login-form-vis{
+  top: 0;
+  transition: .2s;
+  visibility: visible;
+}

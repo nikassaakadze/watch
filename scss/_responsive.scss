@@ -1,0 +1,72 @@
+@media screen and (max-width: 900px){
+  .site-top{
+    display: none !important;
+  }
+  .responsive-nav{
+    display: block !important;
+  }
+  .name-shadow{
+    display: none;
+  }
+  .site-main-banner-inner-left .product-descr-box{
+    display: none;
+  }
+  .site-main-banner-inner-left .banner-headline-box .product-banner-name{
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+  .banner-prod-price{
+    display: none;
+  }
+  .site-main-banner-inner-left .banner-activs .buy-banner-prod{
+    margin-left: 0 !important;
+  }
+  .site-main-banner-inner{
+    height: auto !important;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    &-right{
+      height: 200px !important;
+      img{
+        height: 200px !important;
+      }
+    }
+    .site-main-banner-inner-left .banner-activs{
+      margin-top: 30px !important;
+    }
+  }
+}
+
+.responsive-nav{
+  background: #333;
+  display: none;
+  &-inner{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    &-left{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .responsive-nav-logo{
+        margin-left: 20px;
+        img{
+          height: 40px;
+        }
+      }
+    }
+    &-right{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .responsive-nav-search{
+        margin-right: 20px;
+      }
+    }
+  }
+}
