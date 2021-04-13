@@ -25,6 +25,41 @@
       </form>
     </div>
   </div>
+  <div class="responsive-sidenav">
+    <div class="responsive-sidenav-header">
+      <div class="sidenav-close">
+        <svg width="20" height="20" viewBox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M357 35.7L321.3 0L178.5 142.8L35.7 0L0 35.7L142.8 178.5L0 321.3L35.7 357L178.5 214.2L321.3 357L357 321.3L214.2 178.5L357 35.7Z" fill="white"/>
+        </svg>      
+      </div>
+    </div>
+    <div class="responsive-sidenav-inner">
+      <div class="responsive-nav-list">
+        <ul>
+          <li><span>HOME</span></li>
+          <li><span>CONTACT US</span></li>
+          <li><span>GEL</span></li>
+          <li><span>ABOUT</span></li>
+          <li><span>ENGLISH</span></li>
+        </ul>
+      </div>
+      <div class="responsive-login-form">
+          <form action="" class="login-form">
+            <input type="text" placeholder="Enter Your Email">
+            <input type="text" placeholder="Enter Your Password">
+            <button>SIGN IN</button>
+          </form>
+      </div>
+      <div class="responsive-sidenav-activs">
+        <div class="compare-res">
+          <span>Compare</span>
+        </div>
+        <div class="wishlist-res">
+          <span>Wishlist</span>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="site-top">
     <div class="site-top-nav">
       <div class="site-top-nav-inner">
@@ -598,6 +633,13 @@
       })
       loginFDout.addEventListener("click", () =>{
         formDown.classList.remove("login-form-vis")
+      })
+    </script>
+    <script>
+      var burger = document.querySelector(".responsive-nav-burger")
+      var sidenav = document.querySelector(".responsive-sidenav")
+      burger.addEventListener("click", () => {
+        sidenav.classList.add("sidenav-vis")
       })
     </script>
 </body>
