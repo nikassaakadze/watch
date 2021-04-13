@@ -38,6 +38,26 @@
   }
 }
 
+@media screen and (max-width: 500px){
+  .best-selling-prods-inner-cards{
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
+  }
+  .best-selling-prods-inner-cards-card .prod-card-hero{
+    height: auto !important;
+  }
+  .best-selling-prods-inner-cards-card .prod-card-info .product-name{
+    font-size: 14px !important;
+    padding-left: 10px;
+  }
+  .best-selling-prods-inner-cards-card .prod-card-price span{
+    font-size: 13px;
+  }
+  .best-selling-prods-inner-cards-card .add-to button{
+    width: 85% !important;
+    height: 30px !important;
+  }
+}
+
 .responsive-nav{
   background: #333;
   display: none;

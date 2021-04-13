@@ -316,13 +316,16 @@ body{
       margin-top: 50px;
       &-card{
         width: 100%;
+        .product-card-be{
+          width: 100%;
+        }
         .prod-card-hero{
           width: 100%;
           height: 300px;
           background: rgb(22, 22, 22);
           // padding: 15px 0;
           opacity: .7;
-          overflow: hidden;
+          // overflow: hidden;
           img{
             width: 100%;
             height: 100%;
@@ -373,9 +376,6 @@ body{
           width: 100%;
           display: flex;
           justify-content: center;
-          height: 0;
-          overflow: hidden;
-          visibility: hidden;
           transition: .2s;
         }
         .add-to button{
@@ -388,21 +388,7 @@ body{
         }
         transition: .2s;
         padding-bottom: 20px;
-        &:hover{
-          box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
-          transition: .2s;
-          .prod-card-hero{
-            img{
-              transform: scale(1.1);
-              transition: .3s;
-            }
-          }
-          .add-to{
-            visibility: visible;
-            height: 50px;
-            transition: .2s;
-          }
-        }
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.541);
       }
     }
   }
